@@ -6,13 +6,14 @@ using System.Web;
 
 namespace AnalizeHostingCompanies.Models.DbEntities
 {
-    public class InternetProvider
+    public class Staff
     {
         [Key]
+        public int Id { get; set; }
         public string Name { get; set; }
-        public int SpeedConnection { get; set; }
-        public int Traffic { get; set; }
-        public string PoolIpAddress { get; set; }
+        public int CountAdministrators { get; set; }
+        public int CountSupportManagers { get; set; }
+        public int CountSalesManagers { get; set; }
 
 
     }

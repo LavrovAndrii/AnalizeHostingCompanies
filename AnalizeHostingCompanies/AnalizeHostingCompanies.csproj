@@ -198,6 +198,7 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\DbEntities\Company.cs" />
     <Compile Include="Models\DbEntities\InternetProvider.cs" />
+    <Compile Include="Models\DbEntities\Staff.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

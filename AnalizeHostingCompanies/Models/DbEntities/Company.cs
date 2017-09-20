@@ -18,7 +18,12 @@ namespace AnalizeHostingCompanies.Models.DbEntities
         public string Site { get; set; }
         public string InternetProviderId { get; set; }
         public string ServerDataCenterId { get; set; }
+
+        public string StuffId { get; set; }
+
         //public int Rating  { get; set; }
 
+        public virtual InternetProvider InternetProvider { get; set; }
+        public virtual Staff Staff { get; set; }
     }
 }
