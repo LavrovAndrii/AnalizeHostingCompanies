@@ -10,19 +10,20 @@ namespace AnalizeHostingCompanies.Controllers
     {
         public ActionResult Index()
         {
+            ViewBag.Message = "Головна сторінка.";
             return View();
         }
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Сторінка з описом про проект.";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Контактна інформація.";
 
             return View();
         }

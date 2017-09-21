@@ -200,6 +200,7 @@
     <Compile Include="Models\DbEntities\CpuType.cs" />
     <Compile Include="Models\DbEntities\HddType.cs" />
     <Compile Include="Models\DbEntities\HostingCompany.cs" />
+    <Compile Include="Models\DbEntities\HostingCompanyContext.cs" />
     <Compile Include="Models\DbEntities\InternetProvider.cs" />
     <Compile Include="Models\DbEntities\IpAddress.cs" />
     <Compile Include="Models\DbEntities\Location.cs" />
@@ -277,6 +278,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Controllers\DbControllers\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

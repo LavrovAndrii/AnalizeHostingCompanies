@@ -55,12 +55,12 @@ namespace AnalizeHostingCompanies.Controllers
         public async Task<ActionResult> Index(ManageMessageId? message)
         {
             ViewBag.StatusMessage =
-                message == ManageMessageId.ChangePasswordSuccess ? "Your password has been changed."
-                : message == ManageMessageId.SetPasswordSuccess ? "Your password has been set."
-                : message == ManageMessageId.SetTwoFactorSuccess ? "Your two-factor authentication provider has been set."
-                : message == ManageMessageId.Error ? "An error has occurred."
-                : message == ManageMessageId.AddPhoneSuccess ? "Your phone number was added."
-                : message == ManageMessageId.RemovePhoneSuccess ? "Your phone number was removed."
+                message == ManageMessageId.ChangePasswordSuccess ? "Ваш пароль успішно змінено (Your password has been changed)."
+                : message == ManageMessageId.SetPasswordSuccess ? "Ваш пароль упспішно встановлено (Your password has been set)."
+                : message == ManageMessageId.SetTwoFactorSuccess ? "Двохфакторну аутентифікацію успішно встановлено (Your two-factor authentication provider has been set)."
+                : message == ManageMessageId.Error ? "Виникла помилка (An error has occurred)."
+                : message == ManageMessageId.AddPhoneSuccess ? "Ваш номер телефону успішно додано (Your phone number was added)."
+                : message == ManageMessageId.RemovePhoneSuccess ? "Ваш номер телефону успішно видалено (Your phone number was removed)."
                 : "";
 
             var userId = User.Identity.GetUserId();
@@ -190,7 +190,7 @@ namespace AnalizeHostingCompanies.Controllers
                 return RedirectToAction("Index", new { Message = ManageMessageId.AddPhoneSuccess });
             }
             // If we got this far, something failed, redisplay form
-            ModelState.AddModelError("", "Failed to verify phone");
+            ModelState.AddModelError("", "Помилка верифікації номеру телефону");
             return View(model);
         }
 
@@ -281,8 +281,8 @@ namespace AnalizeHostingCompanies.Controllers
         public async Task<ActionResult> ManageLogins(ManageMessageId? message)
         {
             ViewBag.StatusMessage =
-                message == ManageMessageId.RemoveLoginSuccess ? "The external login was removed."
-                : message == ManageMessageId.Error ? "An error has occurred."
+                message == ManageMessageId.RemoveLoginSuccess ? "Зовнішній логін був видалений (The external login was removed)."
+                : message == ManageMessageId.Error ? "Сталася помилка (An error has occurred)."
                 : "";
             var user = await UserManager.FindByIdAsync(User.Identity.GetUserId());
             if (user == null)
