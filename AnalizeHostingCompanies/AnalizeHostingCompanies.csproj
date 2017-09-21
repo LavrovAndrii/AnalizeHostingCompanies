@@ -198,6 +198,7 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\DbEntities\Cms.cs" />
     <Compile Include="Models\DbEntities\CpuType.cs" />
+    <Compile Include="Models\DbEntities\HddType.cs" />
     <Compile Include="Models\DbEntities\HostingCompany.cs" />
     <Compile Include="Models\DbEntities\InternetProvider.cs" />
     <Compile Include="Models\DbEntities\IpAddress.cs" />

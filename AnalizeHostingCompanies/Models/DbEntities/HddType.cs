@@ -1,24 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Data;
 using System.Linq;
 using System.Web;
 
 namespace AnalizeHostingCompanies.Models.DbEntities
 {
-    public class OfferPeriod
+    public class HddType
     {
         [Key]
         public int Id { get; set; }
-
         [Required]
-        [Range(0, 1000000)]
-        [Display(Name = "Кількість дів")]
-        public int CountDay { get; set; }
-        
-        [Display(Name = "Дата запуску сервера")]
-        public DateTime StartData { get; set; }
+        [Display(Name = "Назва типу накопичувача")]
+        public string Name { get; set; }
+
 
         public virtual ICollection<VirtualServer> VirtualServers { get; set; }
     }
