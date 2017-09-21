@@ -196,9 +196,21 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\DbEntities\Company.cs" />
+    <Compile Include="Models\DbEntities\Cms.cs" />
+    <Compile Include="Models\DbEntities\CpuType.cs" />
+    <Compile Include="Models\DbEntities\HostingCompany.cs" />
     <Compile Include="Models\DbEntities\InternetProvider.cs" />
+    <Compile Include="Models\DbEntities\IpAddress.cs" />
+    <Compile Include="Models\DbEntities\Location.cs" />
+    <Compile Include="Models\DbEntities\OfferPeriod.cs" />
+    <Compile Include="Models\DbEntities\PhisicalServer.cs" />
+    <Compile Include="Models\DbEntities\PoolIpAddress.cs" />
+    <Compile Include="Models\DbEntities\Rating.cs" />
+    <Compile Include="Models\DbEntities\ServerDataCenter.cs" />
+    <Compile Include="Models\DbEntities\SpeedConnection.cs" />
     <Compile Include="Models\DbEntities\Staff.cs" />
+    <Compile Include="Models\DbEntities\Traffic.cs" />
+    <Compile Include="Models\DbEntities\VirtualServer.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
