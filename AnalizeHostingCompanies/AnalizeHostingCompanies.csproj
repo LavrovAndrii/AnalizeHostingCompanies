@@ -197,8 +197,10 @@
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\DbEntities\Cms.cs" />
+    <Compile Include="Models\DbEntities\CountCpuCore.cs" />
     <Compile Include="Models\DbEntities\CpuType.cs" />
     <Compile Include="Models\DbEntities\HddType.cs" />
+    <Compile Include="Models\DbEntities\HddVirtual.cs" />
     <Compile Include="Models\DbEntities\HostingCompany.cs" />
     <Compile Include="Models\DbEntities\HostingCompanyContext.cs" />
     <Compile Include="Models\DbEntities\InternetProvider.cs" />
@@ -207,6 +209,8 @@
     <Compile Include="Models\DbEntities\OfferPeriod.cs" />
     <Compile Include="Models\DbEntities\PhisicalServer.cs" />
     <Compile Include="Models\DbEntities\PoolIpAddress.cs" />
+    <Compile Include="Models\DbEntities\PriceVirtual.cs" />
+    <Compile Include="Models\DbEntities\RamVirtual.cs" />
     <Compile Include="Models\DbEntities\Rating.cs" />
     <Compile Include="Models\DbEntities\ServerDataCenter.cs" />
     <Compile Include="Models\DbEntities\SpeedConnection.cs" />

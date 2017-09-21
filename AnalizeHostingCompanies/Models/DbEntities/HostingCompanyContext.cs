@@ -6,7 +6,7 @@ using System.Web;
 
 namespace AnalizeHostingCompanies.Models.DbEntities
 {
-    public class HostingCompanyContext : DbContext 
+    public class HostingCompanyContext : ApplicationDbContext 
     {
         public DbSet<Cms> Cmses { get; set; }
         public DbSet<CpuType> CpuTypes { get; set; }

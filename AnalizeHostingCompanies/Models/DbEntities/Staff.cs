@@ -26,7 +26,7 @@ namespace AnalizeHostingCompanies.Models.DbEntities
         [Display(Name = "Кількість менеджерів з продаж")]
         public int CountSalesManagers { get; set; }
 
-        public virtual ICollection<HostingCompany> Companies { get; set; }
+        public virtual ICollection<HostingCompany> HostingCompanies { get; set; }
 
     }
 }

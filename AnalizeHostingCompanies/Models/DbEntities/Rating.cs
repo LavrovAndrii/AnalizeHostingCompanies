@@ -11,6 +11,9 @@ namespace AnalizeHostingCompanies.Models.DbEntities
         [Key]
         public int Id { get; set; }
         [Required]
+        [Display(Name = "Хостингова компанія")]
+        public int HostingCompanyId { get; set; }
+        [Required]
         [Range(0, 10000)]
         [Display(Name = "Тестовий період")]
         public int UnpayTestingPeriod { get; set; }

@@ -43,10 +43,11 @@ namespace AnalizeHostingCompanies.Models.DbEntities
         [Required]
         [Display(Name = "Максимальна кількість споживання електроенергії")]
         public int PowerConsumptionMax { get; set; }
-        
-        public virtual VirtualServer VirtualServer { get; set; }
+
         public virtual CpuType CpuType { get; set; }
         public virtual HddType HddType { get; set; }
+        public virtual VirtualServer VirtualServer { get; set; }
+
         public virtual ICollection<ServerDataCenter>ServerDataCenters { get; set; }
     }
 }

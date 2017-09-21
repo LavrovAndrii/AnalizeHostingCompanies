@@ -15,6 +15,6 @@ namespace AnalizeHostingCompanies.Models.DbEntities
         public string Name { get; set; }
 
 
-        public virtual ICollection<VirtualServer> VirtualServers { get; set; }
+        public virtual ICollection<PhisicalServer> PhisicalServers { get; set; }
     }
 }

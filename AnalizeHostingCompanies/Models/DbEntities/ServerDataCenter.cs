@@ -17,17 +17,19 @@ namespace AnalizeHostingCompanies.Models.DbEntities
         public string Name { get; set; }
         [Required]
         [Display(Name = "Місто")]
-        public string LocationId { get; set; }
+        public int LocationId { get; set; }
 
         [Required]
         [Display(Name = "Фізичний сервер")]
-        public string PhisicalServerId { get; set; }
+        public int PhisicalServerId { get; set; }
         [Required]
         [Display(Name = "Надійність (%)")]
         [Range(0, 100)]
         public int UpTime { get; set; }
-        public virtual ICollection<HostingCompany>HostingCompanies { get; set; }
-
+       
         public virtual Location Location { get; set; }
+        public virtual PhisicalServer PhisicalServer { get; set; }
+        public virtual ICollection<HostingCompany> HostingCompanies { get; set; }
+
     }
 }

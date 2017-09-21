@@ -6,15 +6,14 @@ using System.Web;
 
 namespace AnalizeHostingCompanies.Models.DbEntities
 {
-    public class CpuType
+    public class HddVirtual
     {
         [Key]
         public int Id { get; set; }
         [Required]
-        [Display(Name = "Назва типу центрального процесора")]
-        public string Name { get; set; }
+        [Range(0, 200000000000)]
+        public int HddMemory { get; set; }
 
-
-        public virtual ICollection<PhisicalServer> PhisicalServers { get; set; }
+        public virtual ICollection<VirtualServer> VirtualServers { get; set; }
     }
 }

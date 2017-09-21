@@ -19,25 +19,26 @@ namespace AnalizeHostingCompanies.Models.DbEntities
         public string Name { get; set; }
         [Required]
         [Display(Name = "Місце розташування")]
-        public string LocationId { get; set; }
+        public int LocationId { get; set; }
         [Required]
         [Display(Name = "Сайт компанії")]
         public string Site { get; set; }
         [Required]
         [Display(Name = "Інтернет провайдер")]
-        public string InternetProviderId { get; set; }
+        public int InternetProviderId { get; set; }
         [Required]
         [Display(Name = "Датацентр")]
-        public string ServerDataCenterId { get; set; }
+        public int ServerDataCenterId { get; set; }
         [Required]
         [Display(Name = "Персонал")]
-        public string StuffId { get; set; }
+        public int StuffId { get; set; }
 
        
-
+        public virtual Location Location { get; set; }
         public virtual InternetProvider InternetProvider { get; set; }
         public virtual Staff Staff { get; set; }
-        public virtual Location Location { get; set; }
+        public virtual ServerDataCenter ServerDataCenter { get; set; }
+
 
 
         public virtual ICollection<Rating> Rating { get; set; }
