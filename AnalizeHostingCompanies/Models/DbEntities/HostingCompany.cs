@@ -36,9 +36,8 @@ namespace AnalizeHostingCompanies.Models.DbEntities
        
         public virtual Location Location { get; set; }
         public virtual InternetProvider InternetProvider { get; set; }
-        public virtual Staff Staff { get; set; }
         public virtual ServerDataCenter ServerDataCenter { get; set; }
-
+        public virtual Staff Staff { get; set; }
 
 
         public virtual ICollection<Rating> Rating { get; set; }

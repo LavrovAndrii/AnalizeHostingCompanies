@@ -1,0 +1,66 @@
+﻿@model AnalizeHostingCompanies.Models.DbEntities.HostingCompany
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>HostingCompany</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.InternetProvider.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InternetProvider.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Location.City)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Location.City)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ServerDataCenter.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ServerDataCenter.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Staff.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Staff.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Site)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Site)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

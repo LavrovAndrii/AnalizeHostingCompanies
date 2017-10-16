@@ -37,12 +37,12 @@ namespace AnalizeHostingCompanies.Models.DbEntities
         public int MaxTraffic { get; set; }
 
 
-        public virtual ICollection<HostingCompany> HostingCompanies { get; set; }
-
+       
         public virtual SpeedConnection SpeedConnection { get; set; }
         public virtual Traffic Traffic { get; set; }
         public virtual PoolIpAddress PoolIpAddress { get; set; }
 
+        public virtual ICollection<HostingCompany> HostingCompanies { get; set; }
 
 
     }

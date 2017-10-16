@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Data;
+using System.Drawing;
 using System.Linq;
-using System.Security.AccessControl;
+using System.Security.Policy;
 using System.Web;
+using Microsoft.ApplicationInsights.Extensibility.Implementation;
 
 namespace AnalizeHostingCompanies.Models.DbEntities
 {
@@ -11,14 +14,12 @@ namespace AnalizeHostingCompanies.Models.DbEntities
     {
         [Key]
         public int Id { get; set; }
-
         [Required]
         [Display(Name = "Назва датацентру")]
         public string Name { get; set; }
         [Required]
         [Display(Name = "Місто")]
         public int LocationId { get; set; }
-
         [Required]
         [Display(Name = "Фізичний сервер")]
         public int PhisicalServerId { get; set; }

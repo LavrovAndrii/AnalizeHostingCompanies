@@ -1,0 +1,74 @@
+﻿@model AnalizeHostingCompanies.Models.DbEntities.Rating
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Rating</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.HostingCompany.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HostingCompany.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UnpayTestingPeriod)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UnpayTestingPeriod)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Feedback)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Feedback)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Uptime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Uptime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ping)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ping)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaxCountRequest)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaxCountRequest)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

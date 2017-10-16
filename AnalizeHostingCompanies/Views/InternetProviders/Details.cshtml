@@ -1,0 +1,74 @@
+﻿@model AnalizeHostingCompanies.Models.DbEntities.InternetProvider
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>InternetProvider</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SpeedConnection.Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SpeedConnection.Id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Traffic.Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Traffic.Id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PoolIpAddressId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PoolIpAddressId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ping)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ping)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaxSpeed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaxSpeed)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaxTraffic)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaxTraffic)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,106 @@
+﻿@model AnalizeHostingCompanies.Models.DbEntities.PhisicalServer
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PhisicalServer</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CpuType.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CpuType.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HddType.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HddType.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VirtualServer.NameTypeServer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VirtualServer.NameTypeServer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CountCpuCores)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CountCpuCores)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CountHdd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CountHdd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CountRam)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CountRam)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CpuMax)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CpuMax)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HddMax)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HddMax)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RamMax)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RamMax)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PowerConsumptionMax)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PowerConsumptionMax)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

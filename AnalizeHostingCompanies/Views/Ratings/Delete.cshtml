@@ -1,0 +1,80 @@
+﻿@model AnalizeHostingCompanies.Models.DbEntities.Rating
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Rating</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.HostingCompany.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HostingCompany.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UnpayTestingPeriod)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UnpayTestingPeriod)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Feedback)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Feedback)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Uptime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Uptime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ping)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ping)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaxCountRequest)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaxCountRequest)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

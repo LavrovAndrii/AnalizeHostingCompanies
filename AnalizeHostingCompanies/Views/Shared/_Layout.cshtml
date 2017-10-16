@@ -24,6 +24,59 @@
                     <li>@Html.ActionLink("Головна сторінка", "Index", "Home")</li>
                     <li>@Html.ActionLink("Про проект", "About", "Home")</li>
                     <li>@Html.ActionLink("Контакти", "Contact", "Home")</li>
+                   
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Перегляд</a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("CMS", "Index", "Cms")</li>
+                            <li>@Html.ActionLink("CountCpuCore", "Index", "CountCpuCores")</li>
+                            <li>@Html.ActionLink("CpuType", "Index", "CpuTypes")</li>
+                            <li>@Html.ActionLink("HddType", "Index", "HddTypes")</li>
+                            <li>@Html.ActionLink("HddVirtual", "Index", "HddVirtuals")</li>
+                            <li>@Html.ActionLink("HostingCompany", "Index", "HostingCompanies")</li>
+                            <li>@Html.ActionLink("InternetProvider", "Index", "InternetProviders")</li>
+                            <li>@Html.ActionLink("IpAddress", "Index", "IpAddresses")</li>
+                            <li>@Html.ActionLink("Location", "Index", "Locations")</li>
+                            <li>@Html.ActionLink("OfferPeriod", "Index", "OfferPeriods")</li>
+                            <li>@Html.ActionLink("PhisicalServer", "Index", "PhisicalServers")</li>
+                            <li>@Html.ActionLink("PoolIpAddress", "Index", "PoolIpAddresses")</li>
+                            <li>@Html.ActionLink("PriceVirtual", "Index", "PriceVirtuals")</li>
+                            <li>@Html.ActionLink("RamVirtual", "Index", "RamVirtuals")</li>
+                            <li>@Html.ActionLink("Rating", "Index", "Ratings")</li>
+                            <li>@Html.ActionLink("ServerDataCenter", "Index", "ServerDataCenters")</li>
+                            <li>@Html.ActionLink("SpeedConnection", "Index", "SpeedConnections")</li>
+                            <li>@Html.ActionLink("Staff", "Index", "Staffs")</li>
+                            <li>@Html.ActionLink("Traffic", "Index", "Traffic")</li>
+                            <li>@Html.ActionLink("VirtualServer", "Index", "VirtualServers")</li>
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Створення</a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("CMS", "Create", "Cms")</li>
+                            <li>@Html.ActionLink("CountCpuCore", "Create", "CountCpuCores")</li>
+                            <li>@Html.ActionLink("CpuType", "Create", "CpuTypes")</li>
+                            <li>@Html.ActionLink("HddType", "Create", "HddTypes")</li>
+                            <li>@Html.ActionLink("HddVirtual", "Create", "HddVirtuals")</li>
+                            <li>@Html.ActionLink("HostingCompany", "Create", "HostingCompanies")</li>
+                            <li>@Html.ActionLink("InternetProvider", "Create", "InternetProviders")</li>
+                            <li>@Html.ActionLink("IpAddress", "Create", "IpAddresses")</li>
+                            <li>@Html.ActionLink("Location", "Create", "Locations")</li>
+                            <li>@Html.ActionLink("OfferPeriod", "Create", "OfferPeriods")</li>
+                            <li>@Html.ActionLink("PhisicalServer", "Create", "PhisicalServers")</li>
+                            <li>@Html.ActionLink("PoolIpAddress", "Create", "PoolIpAddresses")</li>
+                            <li>@Html.ActionLink("PriceVirtual", "Create", "PriceVirtuals")</li>
+                            <li>@Html.ActionLink("RamVirtual", "Create", "RamVirtuals")</li>
+                            <li>@Html.ActionLink("Rating", "Create", "Ratings")</li>
+                            <li>@Html.ActionLink("ServerDataCenter", "Create", "ServerDataCenters")</li>
+                            <li>@Html.ActionLink("SpeedConnection", "Create", "SpeedConnections")</li>
+                            <li>@Html.ActionLink("Staff", "Create", "Staffs")</li>
+                            <li>@Html.ActionLink("Traffic", "Create", "Traffic")</li>
+                            <li>@Html.ActionLink("VirtualServer", "Create", "VirtualServers")</li>
+                        </ul>
+                    </li>
+
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>

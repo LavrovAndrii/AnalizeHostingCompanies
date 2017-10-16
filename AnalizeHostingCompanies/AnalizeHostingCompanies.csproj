@@ -190,11 +190,36 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\DbControllers\CmsController.cs" />
+    <Compile Include="Controllers\DbControllers\CountCpuCoresController.cs" />
+    <Compile Include="Controllers\DbControllers\CpuTypesController.cs" />
+    <Compile Include="Controllers\DbControllers\HddTypesController.cs" />
+    <Compile Include="Controllers\DbControllers\HddVirtualsController.cs" />
+    <Compile Include="Controllers\DbControllers\HostingCompaniesController.cs" />
+    <Compile Include="Controllers\DbControllers\InternetProvidersController.cs" />
+    <Compile Include="Controllers\DbControllers\IpAddressesController.cs" />
+    <Compile Include="Controllers\DbControllers\LocationsController.cs" />
+    <Compile Include="Controllers\DbControllers\OfferPeriodsController.cs" />
+    <Compile Include="Controllers\DbControllers\PhisicalServersController.cs" />
+    <Compile Include="Controllers\DbControllers\PoolIpAddressesController.cs" />
+    <Compile Include="Controllers\DbControllers\PriceVirtualsController.cs" />
+    <Compile Include="Controllers\DbControllers\RamVirtualsController.cs" />
+    <Compile Include="Controllers\DbControllers\RatingsController.cs" />
+    <Compile Include="Controllers\DbControllers\ServerDataCentersController.cs" />
+    <Compile Include="Controllers\DbControllers\SpeedConnectionsController.cs" />
+    <Compile Include="Controllers\DbControllers\StaffsController.cs" />
+    <Compile Include="Controllers\DbControllers\TrafficController.cs" />
+    <Compile Include="Controllers\DbControllers\VirtualServersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201710161808240_InitialMigration.cs" />
+    <Compile Include="Migrations\201710161808240_InitialMigration.Designer.cs">
+      <DependentUpon>201710161808240_InitialMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\DbEntities\Cms.cs" />
     <Compile Include="Models\DbEntities\CountCpuCore.cs" />
@@ -202,7 +227,6 @@
     <Compile Include="Models\DbEntities\HddType.cs" />
     <Compile Include="Models\DbEntities\HddVirtual.cs" />
     <Compile Include="Models\DbEntities\HostingCompany.cs" />
-    <Compile Include="Models\DbEntities\HostingCompanyContext.cs" />
     <Compile Include="Models\DbEntities\InternetProvider.cs" />
     <Compile Include="Models\DbEntities\IpAddress.cs" />
     <Compile Include="Models\DbEntities\Location.cs" />
@@ -234,6 +258,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -279,10 +304,109 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\CountCpuCores\Create.cshtml" />
+    <Content Include="Views\CountCpuCores\Delete.cshtml" />
+    <Content Include="Views\CountCpuCores\Details.cshtml" />
+    <Content Include="Views\CountCpuCores\Edit.cshtml" />
+    <Content Include="Views\CountCpuCores\Index.cshtml" />
+    <Content Include="Views\CpuTypes\Create.cshtml" />
+    <Content Include="Views\CpuTypes\Delete.cshtml" />
+    <Content Include="Views\CpuTypes\Details.cshtml" />
+    <Content Include="Views\CpuTypes\Edit.cshtml" />
+    <Content Include="Views\CpuTypes\Index.cshtml" />
+    <Content Include="Views\HddTypes\Create.cshtml" />
+    <Content Include="Views\HddTypes\Delete.cshtml" />
+    <Content Include="Views\HddTypes\Details.cshtml" />
+    <Content Include="Views\HddTypes\Edit.cshtml" />
+    <Content Include="Views\HddTypes\Index.cshtml" />
+    <Content Include="Views\HddVirtuals\Create.cshtml" />
+    <Content Include="Views\HddVirtuals\Delete.cshtml" />
+    <Content Include="Views\HddVirtuals\Details.cshtml" />
+    <Content Include="Views\HddVirtuals\Edit.cshtml" />
+    <Content Include="Views\HddVirtuals\Index.cshtml" />
+    <Content Include="Views\HostingCompanies\Create.cshtml" />
+    <Content Include="Views\HostingCompanies\Delete.cshtml" />
+    <Content Include="Views\HostingCompanies\Details.cshtml" />
+    <Content Include="Views\HostingCompanies\Edit.cshtml" />
+    <Content Include="Views\HostingCompanies\Index.cshtml" />
+    <Content Include="Views\InternetProviders\Create.cshtml" />
+    <Content Include="Views\InternetProviders\Delete.cshtml" />
+    <Content Include="Views\InternetProviders\Details.cshtml" />
+    <Content Include="Views\InternetProviders\Edit.cshtml" />
+    <Content Include="Views\InternetProviders\Index.cshtml" />
+    <Content Include="Views\IpAddresses\Create.cshtml" />
+    <Content Include="Views\IpAddresses\Delete.cshtml" />
+    <Content Include="Views\IpAddresses\Details.cshtml" />
+    <Content Include="Views\IpAddresses\Edit.cshtml" />
+    <Content Include="Views\IpAddresses\Index.cshtml" />
+    <Content Include="Views\Locations\Create.cshtml" />
+    <Content Include="Views\Locations\Delete.cshtml" />
+    <Content Include="Views\Locations\Details.cshtml" />
+    <Content Include="Views\Locations\Edit.cshtml" />
+    <Content Include="Views\Locations\Index.cshtml" />
+    <Content Include="Views\OfferPeriods\Create.cshtml" />
+    <Content Include="Views\OfferPeriods\Delete.cshtml" />
+    <Content Include="Views\OfferPeriods\Details.cshtml" />
+    <Content Include="Views\OfferPeriods\Edit.cshtml" />
+    <Content Include="Views\OfferPeriods\Index.cshtml" />
+    <Content Include="Views\PhisicalServers\Create.cshtml" />
+    <Content Include="Views\PhisicalServers\Delete.cshtml" />
+    <Content Include="Views\PhisicalServers\Details.cshtml" />
+    <Content Include="Views\PhisicalServers\Edit.cshtml" />
+    <Content Include="Views\PhisicalServers\Index.cshtml" />
+    <Content Include="Views\PoolIpAddresses\Create.cshtml" />
+    <Content Include="Views\PoolIpAddresses\Delete.cshtml" />
+    <Content Include="Views\PoolIpAddresses\Details.cshtml" />
+    <Content Include="Views\PoolIpAddresses\Edit.cshtml" />
+    <Content Include="Views\PoolIpAddresses\Index.cshtml" />
+    <Content Include="Views\PriceVirtuals\Create.cshtml" />
+    <Content Include="Views\PriceVirtuals\Delete.cshtml" />
+    <Content Include="Views\PriceVirtuals\Details.cshtml" />
+    <Content Include="Views\PriceVirtuals\Edit.cshtml" />
+    <Content Include="Views\PriceVirtuals\Index.cshtml" />
+    <Content Include="Views\RamVirtuals\Create.cshtml" />
+    <Content Include="Views\RamVirtuals\Delete.cshtml" />
+    <Content Include="Views\RamVirtuals\Details.cshtml" />
+    <Content Include="Views\RamVirtuals\Edit.cshtml" />
+    <Content Include="Views\RamVirtuals\Index.cshtml" />
+    <Content Include="Views\Ratings\Create.cshtml" />
+    <Content Include="Views\Ratings\Delete.cshtml" />
+    <Content Include="Views\Ratings\Details.cshtml" />
+    <Content Include="Views\Ratings\Edit.cshtml" />
+    <Content Include="Views\Ratings\Index.cshtml" />
+    <Content Include="Views\ServerDataCenters\Create.cshtml" />
+    <Content Include="Views\ServerDataCenters\Delete.cshtml" />
+    <Content Include="Views\ServerDataCenters\Details.cshtml" />
+    <Content Include="Views\ServerDataCenters\Edit.cshtml" />
+    <Content Include="Views\ServerDataCenters\Index.cshtml" />
+    <Content Include="Views\SpeedConnections\Create.cshtml" />
+    <Content Include="Views\SpeedConnections\Delete.cshtml" />
+    <Content Include="Views\SpeedConnections\Details.cshtml" />
+    <Content Include="Views\SpeedConnections\Edit.cshtml" />
+    <Content Include="Views\SpeedConnections\Index.cshtml" />
+    <Content Include="Views\Staffs\Create.cshtml" />
+    <Content Include="Views\Staffs\Delete.cshtml" />
+    <Content Include="Views\Staffs\Details.cshtml" />
+    <Content Include="Views\Staffs\Edit.cshtml" />
+    <Content Include="Views\Staffs\Index.cshtml" />
+    <Content Include="Views\Traffic\Create.cshtml" />
+    <Content Include="Views\Traffic\Delete.cshtml" />
+    <Content Include="Views\Traffic\Details.cshtml" />
+    <Content Include="Views\Traffic\Edit.cshtml" />
+    <Content Include="Views\Traffic\Index.cshtml" />
+    <Content Include="Views\VirtualServers\Create.cshtml" />
+    <Content Include="Views\VirtualServers\Delete.cshtml" />
+    <Content Include="Views\VirtualServers\Details.cshtml" />
+    <Content Include="Views\VirtualServers\Edit.cshtml" />
+    <Content Include="Views\VirtualServers\Index.cshtml" />
+    <Content Include="Views\Cms\Create.cshtml" />
+    <Content Include="Views\Cms\Delete.cshtml" />
+    <Content Include="Views\Cms\Details.cshtml" />
+    <Content Include="Views\Cms\Edit.cshtml" />
+    <Content Include="Views\Cms\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\DbControllers\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -296,6 +420,11 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201710161808240_InitialMigration.resx">
+      <DependentUpon>201710161808240_InitialMigration.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
